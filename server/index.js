@@ -9,7 +9,7 @@ const app = new express();
 app.use(express.json());
 app.use(cors());
 
-const client = new MongoClient('mongodb+srv://sdp:sdp@cluster0.e8408fk.mongodb.net/?retryWrites=true&w=majority')
+const client = new MongoClient('mongodb+srv://admin:admin@cluster0.jak1egs.mongodb.net/?retryWrites=true&w=majority')
 client.connect();
 
 const db = client.db("sdp")

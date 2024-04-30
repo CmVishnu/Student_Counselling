@@ -94,11 +94,6 @@ app.get('/retrivecounsellors',  async (req, res) => {
     res.send(result);
 })
 
-// app.delete('/deletecounsellor/:counsellorId', async (req, res) => {
-//     const {counsellorId} = req.params
-//     const result = await col3.deleteOne({_id: new ObjectId(counsellorId)})
-//     res.json({message : 'deleted successfully'})
-// })
 
 app.get('/getFormData', (req, res) => {
     try {
@@ -129,29 +124,6 @@ app.post('/check', async (req, res) => {
 })
 
 
-// const transporter = nodemailer.createTransport({
-//     service: "Gmail",
-//     host: "smtp.gmail.com",
-//     port: 465,
-//     secure: true,
-//     auth: {
-//       user: "sivasainookala@gmail.com",
-//       pass: "zqay okxe drmn ehms",
-//     },
-//   });
-//   const mailOptions = {
-//     from: "sivasainookala@gmail.com",
-//     to: "cmvishnubabu08@example.com",
-//     subject: "Hello from Nodemailer",
-//     text: "This is a test email sent using Nodemailer.",
-//   };
-//   transporter.sendMail(mailOptions, (error, info) => {
-//     if (error) {
-//       console.error("Error sending email: ", error);
-//     } else {
-//       console.log("Email sent: ", info.response);
-//     }
-//   });
 
 app.listen(8082)
 
